@@ -197,6 +197,7 @@ function checkGameOver() {
     }
     if (cellsFilled === 9 && popUp.style.display !== "flex"){
         drawPop.style.display = "flex";
+                drawcase
         blurIt();
         
     }
@@ -205,16 +206,6 @@ const blurIt = () => {
     theBoard.style.filter = "blur(10px)";
 }
 const drawCase = () => {
-    theBoard.style.color = "red";
-    table1.style.color = "red";
-    table2.style.color = "red";
-    table3.style.color = "red";
-    table4.style.color = "red";
-    table5.style.color = "red";
-    table6.style.color = "red";
-    table7.style.color = "red";
-    table8.style.color = "red";
-    table9.style.color = "red";
     setDraw.style.animation = "changing 2s linear infinite";
 }
 let table1 = document.getElementById('td-1');
