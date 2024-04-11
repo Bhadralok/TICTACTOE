@@ -197,7 +197,6 @@ function checkGameOver() {
     }
     if (cellsFilled === 9 && popUp.style.display !== "flex"){
         drawPop.style.display = "flex";
-        drawCase();
         blurIt();
         
     }
